@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:padding="10dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/review_card"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:columnCount="2"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/parentImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/example1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="보호자 이름"
+                android:textSize="14dp"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/parentName"/>
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/reviewText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanum_gothic"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:lines="2"
+                android:text="후기 내용"
+                android:padding="18dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/light_gray"
+                android:textSize="10dp" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:columnCount="2"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@color/main">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/petsitterImg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/example1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:columnCount="2">
+
+                        <Button
+                            android:layout_width="55dp"
+                            android:layout_height="25dp"
+                            android:text="돌봄 종류"
+                            android:textColor="#676767"
+                            android:fontFamily="@font/nanum_gothic_bold"
+                            android:textSize="9dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/option_choice_button"
+                            android:id="@+id/whatService" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="펫시터 이름"
+                            android:textSize="12dp"
+                            android:layout_marginLeft="3dp"
+                            android:fontFamily="@font/nanum_gothic_bold"
+                            android:layout_marginTop="3dp"
+                            android:id="@+id/petsittername" />
+
+                    </GridLayout>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

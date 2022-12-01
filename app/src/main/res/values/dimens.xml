@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="main_padding">16dp</dimen>
+    <dimen name="animal_btn_text_size">18sp</dimen>
+    <dimen name="pet_reg_main_text_size">20sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="text_size_reg02">16sp</dimen>
+    <dimen name="btn_width_size_reg02">200dp</dimen>
+    <dimen name="part_width_size_reg02">100dp</dimen>
+    <dimen name="petsiiter_btn_padding_ver">25dp</dimen>
+    <dimen name="petsiiter_btn_padding_hor">40dp</dimen>
+</resources>

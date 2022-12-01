@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/home"
+        tools:context=".navfragment.HomeFragment">
+
+        <Button
+            android:id="@+id/myAddr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:textColor="#676767"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:background="@color/main"
+            android:text="대구광역시 북구 대현동 21길61-3" />
+
+        <Button
+            android:id="@+id/research"
+            android:layout_width="wrap_content"
+            android:background="@drawable/option_choice_button"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/nanum_gothic_bold"
+
+            android:text="카테고리"
+            android:textSize="14dp" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:columnCount="2"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/dog_services"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:adjustViewBounds="true"
+                android:padding="25sp"
+                android:elevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/main_button"
+                android:src="@drawable/dogservice" />
+
+            <ImageButton
+                android:id="@+id/cat_services"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                android:padding="25sp"
+                android:elevation="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/main_button"
+                android:src="@drawable/catservice"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="15dp"/>
+
+            <ImageButton
+                android:id="@+id/together_services"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:padding="25sp"
+                android:elevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerInside"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/main_button"
+                android:src="@drawable/together" />
+
+            <ImageButton
+                android:id="@+id/reviews"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:padding="25sp"
+                android:scaleType="centerInside"
+                android:elevation="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/main_button"
+                android:src="@drawable/reviews"
+                android:layout_marginStart="15dp"/>
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/service_reviews"
+            android:layout_width="wrap_content"
+            android:background="@drawable/option_choice_button"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:text="돌봄후기"
+            android:textSize="14dp"
+            android:fontFamily="@font/nanum_gothic_bold"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/reviewRecylcerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:padding="10dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/review_card"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:columnCount="3"
+            android:layout_marginTop="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/parentImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/example1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="보호자 이름"
+                android:textSize="18dp"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:textColor="#676767"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/parentName"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:text="돌봄 서비스"
+                android:textSize="16dp"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:textColor="#676767"
+                android:layout_gravity="center"
+                android:background="@drawable/solid_button"
+                android:layout_marginLeft="110dp"
+                android:id="@+id/whatService" />
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <ImageView
+            android:id="@+id/reviewImage"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType = "centerCrop"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/example1" />
+
+        <TextView
+            android:id="@+id/reviewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="5"
+            android:text="후기 내용"
+            android:fontFamily="@font/nanum_gothic"
+            android:textColor="#676767"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:background="#F7F7F7"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp" />
+
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:padding="10dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/main"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/whoService"
+            android:clickable="true">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:columnCount="3"
+
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/petsitterImg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/example1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="펫시터 이름"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:textColor="#676767"
+                    android:layout_gravity="center"
+                    android:background="@drawable/option_choice_button"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/petsittername" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="에게 서비스를 받았어요"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/nanum_gothic"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"/>
+
+            </GridLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

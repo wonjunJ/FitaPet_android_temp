@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/home"
+    tools:context=".PetsitterList.DogServiceFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/nanum_gothic_bold"
+        android:textColor="#676767"
+        android:background="#F7F7F7"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:text="~~~ 경기도 파주시 어쩌구 저쩌구 ~~~" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:background="@color/main"
+        android:textSize="18dp"
+        android:fontFamily="@font/nanum_gothic_bold"
+        android:text="몇명의 친구와 함께 할 건가요?" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D4D4D3"
+        android:layout_marginTop="10dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/friend_choose_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*최대 두 명의 친구까지 선택할 수 있습니다."
+        android:fontFamily="@font/nanum_gothic"
+        android:textSize="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="다음"
+        android:fontFamily="@font/nanum_gothic_bold"
+        android:textSize="16dp"
+        android:background="@drawable/solid_button"
+        android:id="@+id/go_next_page"/>
+
+</LinearLayout>

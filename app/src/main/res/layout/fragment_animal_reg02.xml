@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.animalReg.AnimalRegFragment02">
+<!--제일 큰틀-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+
+        android:orientation="vertical">
+<!--        다른동물 반응-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/main_padding">
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="다른 동물을 만났을 때 반응을
+                알려주세요"
+                android:textSize="@dimen/text_size_reg02"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/animal_reg2_petReact_btn01"
+                android:layout_width="@dimen/btn_width_size_reg02"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/animal_btn"
+                android:gravity="left"
+                android:padding="@dimen/main_padding"
+                android:text="무서워하며 경계해요" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/animal_reg2_petReact_btn02"
+                android:layout_width="@dimen/btn_width_size_reg02"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/animal_btn"
+                android:gravity="left"
+                android:padding="@dimen/main_padding"
+                android:text="공격적이에요" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/animal_reg2_petReact_btn03"
+                android:layout_width="@dimen/btn_width_size_reg02"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/animal_btn"
+                android:gravity="left"
+                android:padding="@dimen/main_padding"
+                android:text="반가워하며 환영해요" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/animal_reg2_PetReact_btn04"
+                android:layout_width="@dimen/btn_width_size_reg02"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/animal_btn"
+                android:gravity="left"
+                android:padding="@dimen/main_padding"
+                android:text="별로 관심을 가지지 않아요" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10px"
+            android:layout_marginLeft="@dimen/main_padding"
+            android:layout_marginRight="@dimen/main_padding"
+            android:background="@color/light_gray"/>
+        <!--        낯선사람 반응-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/main_padding"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="264dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="낯선 사람을 만났을 때 반응을
+                 알려주세요"
+                android:textSize="@dimen/text_size_reg02"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/animal_reg2_peoReact_btn01"
+                android:layout_width="@dimen/btn_width_size_reg02"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:background="@drawable/animal_btn"
+                android:padding="@dimen/main_padding"
+                android:text="무서워하며 경계해요" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/animal_reg2_peoReact_btn02"
+                android:layout_width="@dimen/btn_width_size_reg02"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="공격적이에요"
+                android:padding="@dimen/main_padding"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/animal_btn"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/animal_reg2_peoReact_btn03"
+                android:layout_width="@dimen/btn_width_size_reg02"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="반가워하며 환영해요"
+                android:padding="@dimen/main_padding"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/animal_btn"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/animal_reg2_peoReact_btn04"
+                android:layout_width="@dimen/btn_width_size_reg02"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="별로관심을 가지지않아요"
+                android:padding="@dimen/main_padding"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/animal_btn"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10px"
+            android:layout_marginLeft="@dimen/main_padding"
+            android:layout_marginRight="@dimen/main_padding"
+            android:background="@color/light_gray"/>
+        <!--        만지면 물거나 예민한 부위-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/main_padding">
+
+            <TextView
+                android:layout_width="264dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:text="만지면 물거나 예민하게 반응하는
+                 부위가 있나요"
+                android:textSize="@dimen/text_size_reg02"
+                android:textStyle="bold" />
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:columnCount="3">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/animal_reg2_part_btn01"
+                    android:layout_width="@dimen/part_width_size_reg02"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/animal_btn"
+                    android:gravity="center"
+                    android:padding="@dimen/main_padding"
+                    android:text="얼굴" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/animal_reg2_part_btn02"
+                    android:layout_width="@dimen/part_width_size_reg02"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/animal_btn"
+                    android:gravity="center"
+                    android:padding="@dimen/main_padding"
+                    android:text="가슴" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/animal_reg2_part_btn03"
+                    android:layout_width="@dimen/part_width_size_reg02"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/animal_btn"
+                    android:gravity="center"
+                    android:padding="@dimen/main_padding"
+                    android:text="등" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/animal_reg2_part_btn04"
+                    android:layout_width="@dimen/part_width_size_reg02"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/animal_btn"
+                    android:gravity="center"
+                    android:padding="@dimen/main_padding"
+                    android:text="앞발" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/animal_reg2_part_btn05"
+                    android:layout_width="@dimen/part_width_size_reg02"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/animal_btn"
+                    android:gravity="center"
+                    android:padding="@dimen/main_padding"
+                    android:text="배" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/animal_reg2_part_btn06"
+                    android:layout_width="@dimen/part_width_size_reg02"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/animal_btn"
+                    android:gravity="center"
+                    android:padding="@dimen/main_padding"
+                    android:text="꼬리" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/animal_reg2_part_btn07"
+                    android:layout_width="@dimen/part_width_size_reg02"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/animal_btn"
+                    android:gravity="center"
+                    android:padding="@dimen/main_padding"
+                    android:text="뒷발" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/animal_reg2_part_btn08"
+                    android:layout_width="@dimen/part_width_size_reg02"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/animal_btn"
+                    android:gravity="center"
+                    android:padding="@dimen/main_padding"
+                    android:text="없음" />
+            </GridLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10px"
+            android:layout_marginLeft="@dimen/main_padding"
+            android:layout_marginRight="@dimen/main_padding"
+            android:background="@color/light_gray"/>
+<!--        공격유무-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/main_padding">
+
+            <TextView
+                android:layout_width="264dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="사람을 물거나 다른 동물을 공격한 적이 있나요"
+                android:textSize="@dimen/text_size_reg02"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/animal_reg2_attack_btn01"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/animal_btn"
+                    android:padding="@dimen/main_padding"
+                    android:text="예" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/animal_reg2_attack_btn02"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="아니오"
+                    android:padding="@dimen/main_padding"
+                    android:background="@drawable/animal_btn"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10px"
+            android:layout_marginLeft="@dimen/main_padding"
+            android:layout_marginRight="@dimen/main_padding"
+            android:background="@color/light_gray"/>
+<!--        예방접종유무-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/main_padding">
+
+            <TextView
+                android:layout_width="264dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="예방 접종을 하셨나요?"
+                android:textSize="@dimen/text_size_reg02"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="264dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:text="(켄넬코프, 코로나백신, 종합7종, 심장사상충, 관경병 중 하나라도 미 접종시 아니오를 택해주세요.)"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/animal_reg2_vaccin_btn01"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/animal_btn"
+                    android:padding="@dimen/main_padding"
+                    android:text="예" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/animal_reg2_vaccin_btn02"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="아니오"
+                    android:padding="@dimen/main_padding"
+                    android:background="@drawable/animal_btn"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10px"
+            android:layout_marginLeft="@dimen/main_padding"
+            android:layout_marginRight="@dimen/main_padding"
+            android:background="@color/light_gray"/>
+
+        <LinearLayout
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/main_padding">
+
+            <TextView
+                android:layout_width="264dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="다니는 동물병원을 알려주세요"
+                android:textSize="@dimen/text_size_reg02"
+                android:textStyle="bold" />
+            <!--                이름-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="-10dp"
+                android:orientation="horizontal"
+                android:paddingRight="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="병원이름"
+                    android:textSize="@dimen/text_size_reg02"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/animal_reg_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:hint="병원이름을 입력해주세요."
+                    android:inputType="text" />
+            </LinearLayout>
+            <!--견종-->
+            <LinearLayout
+                android:id="@+id/animal_reg_dog_breed_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="5dp"
+                android:paddingRight="30dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="전화번호"
+                    android:textSize="@dimen/text_size_reg02"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/animal_reg_dog_breed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:hint="전화번호를 입력해주세요."
+                    android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 다음버튼 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/animal_reg_next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/blue_btn"
+            android:text="동물등록" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
