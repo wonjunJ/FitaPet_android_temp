@@ -81,6 +81,7 @@ class MypageFragment : Fragment() {
             }
         })
 
+        //북마크 리스트 받아오는 것
         /*
         RetrofitClient.apiServer.getBmark(4).enqueue(object: Callback<getBmark>{
             override fun onResponse(call: Call<getBmark>, response: Response<getBmark>) {

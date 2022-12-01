@@ -37,15 +37,25 @@
             android:layout_gravity="center"
             android:textSize="18dp" />
 
+        <TextView
+            android:id="@+id/satScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:text="00.0"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:textSize="15dp" />
+
         <GridLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="6dp"
             android:columnCount="2"
             android:orientation="horizontal">
-
+            <!--margintop=10dp-->
                 <Button
                     android:id="@+id/petsitterCareer"
                     android:layout_width="90dp"
